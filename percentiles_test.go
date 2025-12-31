@@ -45,6 +45,8 @@ func runWithThreshold(t *testing.T, threshold int64) {
 	result100 := p.Percentile(100.0)
 
 	assert.Equal(t, 100.0, result100)
+
+	p.Done()
 }
 
 func ExampleStats_Percentiles() {
@@ -62,6 +64,8 @@ func ExampleStats_Percentiles() {
 	result87 := p.Percentile(87.0)
 
 	fmt.Printf("87th percentile: %v\n", result87)
+
+	p.Done()
 
 	// Output:
 	// percentiles: [50 75 90 95 99]

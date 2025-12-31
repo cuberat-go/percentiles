@@ -22,6 +22,8 @@ The percentile module computes percentile metrics (e.g., p50, p75, p95) on the i
 
     fmt.Printf("87th percentile: %v\n", result87)
 
+    p.Done()
+
     // Output:
     // percentiles: [50 75 90 95 99]
     // 87th percentile: 87
